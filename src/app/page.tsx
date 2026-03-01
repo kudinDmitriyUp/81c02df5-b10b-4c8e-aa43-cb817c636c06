@@ -85,18 +85,18 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Strength & Conditioning",              description: "Build muscle, increase power, and develop functional strength with scientifically-designed workout programs. Our coaches guide you through proper form and progressive training techniques.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg", imageAlt: "strength training workout fitness athlete" },
-              phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg", imageAlt: "strength training workout fitness athlete" }
+              title: "Strength & Conditioning",              description: "Build muscle, increase power, and develop functional strength with scientifically-designed workout programs. Our coaches guide you through proper form and progressive training techniques.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=1", imageAlt: "strength training workout fitness athlete" },
+              phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=2", imageAlt: "strength training workout fitness athlete" }
             },
             {
               id: 2,
-              title: "Cardio & Endurance",              description: "Improve your cardiovascular health and athletic stamina with customized cardio programs. From HIIT training to long-distance conditioning, we optimize your endurance performance.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg", imageAlt: "cardio training running fitness health" },
-              phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg", imageAlt: "cardio training running fitness health" }
+              title: "Cardio & Endurance",              description: "Improve your cardiovascular health and athletic stamina with customized cardio programs. From HIIT training to long-distance conditioning, we optimize your endurance performance.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=1", imageAlt: "cardio training running fitness health" },
+              phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=2", imageAlt: "cardio training running fitness health" }
             },
             {
               id: 3,
-              title: "Nutrition Coaching",              description: "Fuel your body right with personalized meal plans and nutrition guidance. Our coaches help you make sustainable dietary choices that support your training and goals.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg", imageAlt: "nutrition meal plan healthy eating diet" },
-              phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg", imageAlt: "nutrition meal plan healthy eating diet" }
+              title: "Nutrition Coaching",              description: "Fuel your body right with personalized meal plans and nutrition guidance. Our coaches help you make sustainable dietary choices that support your training and goals.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=1", imageAlt: "nutrition meal plan healthy eating diet" },
+              phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=2", imageAlt: "nutrition meal plan healthy eating diet" }
             }
           ]}
           showStepNumbers={true}
@@ -121,13 +121,13 @@ export default function LandingPage() {
               ]
             },
             {
-              id: "professional",              title: "Professional",              price: "$199",              period: "/month",              imageSrc: "http://img.b2bpic.net/free-photo/two-internationals-friends-is-engaged-gym_1157-32155.jpg",              imageAlt: "Professional coaching plan",              button: { text: "Choose Plan", href: "#contact" },
+              id: "professional",              title: "Professional",              price: "$199",              period: "/month",              imageSrc: "http://img.b2bpic.net/free-photo/two-internationals-friends-is-engaged-gym_1157-32155.jpg?_wi=1",              imageAlt: "Professional coaching plan",              button: { text: "Choose Plan", href: "#contact" },
               features: [
                 "4 coaching sessions per week",                "Customized nutrition plan",                "Bi-weekly progress assessments",                "Priority email & phone support",                "Access to training app"
               ]
             },
             {
-              id: "elite",              title: "Elite",              price: "$349",              period: "/month",              imageSrc: "http://img.b2bpic.net/free-photo/two-internationals-friends-is-engaged-gym_1157-32155.jpg",              imageAlt: "Elite coaching plan",              button: { text: "Choose Plan", href: "#contact" },
+              id: "elite",              title: "Elite",              price: "$349",              period: "/month",              imageSrc: "http://img.b2bpic.net/free-photo/two-internationals-friends-is-engaged-gym_1157-32155.jpg?_wi=2",              imageAlt: "Elite coaching plan",              button: { text: "Choose Plan", href: "#contact" },
               features: [
                 "Unlimited coaching sessions",                "Complete nutrition & recovery plan",                "Weekly progress assessments",                "24/7 dedicated coach support",                "Full training app access",                "Quarterly performance evaluation"
               ]
@@ -149,16 +149,16 @@ export default function LandingPage() {
           tagAnimation="slide-up"
           members={[
             {
-              id: "1",              name: "Marcus Johnson",              role: "Head Coach & Founder",              imageSrc: "http://img.b2bpic.net/free-photo/smiley-male-boxer-posing-t-shirt-with-arms-crossed_23-2148426242.jpg",              imageAlt: "male coach portrait fitness professional trainer"
+              id: "1",              name: "Marcus Johnson",              role: "Head Coach & Founder",              imageSrc: "http://img.b2bpic.net/free-photo/smiley-male-boxer-posing-t-shirt-with-arms-crossed_23-2148426242.jpg?_wi=1",              imageAlt: "male coach portrait fitness professional trainer"
             },
             {
-              id: "2",              name: "Sarah Mitchell",              role: "Strength & Conditioning Specialist",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg",              imageAlt: "female coach portrait fitness professional trainer"
+              id: "2",              name: "Sarah Mitchell",              role: "Strength & Conditioning Specialist",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg?_wi=1",              imageAlt: "female coach portrait fitness professional trainer"
             },
             {
-              id: "3",              name: "David Chen",              role: "Endurance Coach",              imageSrc: "http://img.b2bpic.net/free-photo/smiley-male-boxer-posing-t-shirt-with-arms-crossed_23-2148426242.jpg",              imageAlt: "male coach portrait fitness professional trainer"
+              id: "3",              name: "David Chen",              role: "Endurance Coach",              imageSrc: "http://img.b2bpic.net/free-photo/smiley-male-boxer-posing-t-shirt-with-arms-crossed_23-2148426242.jpg?_wi=2",              imageAlt: "male coach portrait fitness professional trainer"
             },
             {
-              id: "4",              name: "Emily Rodriguez",              role: "Nutrition & Wellness Coach",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg",              imageAlt: "female coach portrait fitness professional trainer"
+              id: "4",              name: "Emily Rodriguez",              role: "Nutrition & Wellness Coach",              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg?_wi=2",              imageAlt: "female coach portrait fitness professional trainer"
             }
           ]}
           gridVariant="uniform-all-items-equal"
@@ -186,11 +186,11 @@ export default function LandingPage() {
             },
             {
               id: "3",              name: "Michael Torres",              role: "Entrepreneur",              company: "Tech Startup Founder",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg",              imageAlt: "athlete portrait trained client fit person professional"
+              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg?_wi=3",              imageAlt: "athlete portrait trained client fit person professional"
             },
             {
               id: "4",              name: "Jessica Lee",              role: "Athlete",              company: "Competitive Runner",              rating: 5,
-              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg",              imageAlt: "athlete portrait transformed client fit person professional"
+              imageSrc: "http://img.b2bpic.net/free-photo/beautiful-sportive-girl-posing-with-crossed-arms-dark-wall_176420-620.jpg?_wi=4",              imageAlt: "athlete portrait transformed client fit person professional"
             }
           ]}
           kpiItems={[
