@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import HeroBillboardScroll from '@/components/sections/hero/HeroBillboardScroll';
+import HeroBillboardDashboard from '@/components/sections/hero/HeroBillboardDashboard';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 import FeatureCardNine from '@/components/sections/feature/FeatureCardNine';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
@@ -10,7 +10,7 @@ import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Zap, Target, DollarSign, Users, Star, Mail } from 'lucide-react';
+import { Zap, Target, DollarSign, Users, Star, Mail, Hexagon, House, MessageSquareText, Settings, CircleDollarSign, ArrowLeftRight, Send } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -43,20 +43,47 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroBillboardScroll
+        <HeroBillboardDashboard
           title="Transform Your Body, Elevate Your Life"
           description="Expert personal coaching designed to help you achieve your fitness goals. Whether you're starting your journey or reaching peak performance, our certified coaches are here to guide every step."
           tag="Professional Sports Coaching"
           tagIcon={Zap}
           tagAnimation="slide-up"
           background={{ variant: "canvas-reveal" }}
-          imageSrc="http://img.b2bpic.net/free-photo/woman-gym-with-coach_1303-5545.jpg"
-          imageAlt="Professional athlete training with a coach"
           buttons={[
             { text: "Book Your First Session", href: "#contact" },
             { text: "View Services", href: "#services" }
           ]}
           buttonAnimation="slide-up"
+          dashboard={{
+            title: "Coaching Performance Hub",            logoIcon: Hexagon,
+            imageSrc: "http://img.b2bpic.net/free-photo/woman-gym-with-coach_1303-5545.jpg",            buttons: [
+              { text: "View Dashboard", href: "#" },
+              { text: "Export Progress", href: "#" }
+            ],
+            sidebarItems: [
+              { icon: House, active: true },
+              { icon: MessageSquareText },
+              { icon: Settings }
+            ],
+            stats: [
+              { title: "Clients Trained", values: [150, 280, 450], description: "Active coaching clients." },
+              { title: "Sessions Completed", values: [1240, 1850, 2340], description: "Total training sessions." },
+              { title: "Goals Achieved", values: [92, 145, 198], description: "Client success rate." }
+            ],
+            chartTitle: "Monthly Training Activity",            chartData: [
+              { value: 65 },
+              { value: 45 },
+              { value: 78 },
+              { value: 55 },
+              { value: 88 }
+            ],
+            listTitle: "Recent Client Achievements",            listItems: [
+              { icon: CircleDollarSign, title: "Weight Loss Goal Met", status: "Completed" },
+              { icon: ArrowLeftRight, title: "Strength Milestone", status: "In Progress" },
+              { icon: Send, title: "Endurance Record", status: "Completed" }
+            ]
+          }}
         />
       </div>
 
@@ -85,17 +112,17 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Strength & Conditioning",              description: "Build muscle, increase power, and develop functional strength with scientifically-designed workout programs. Our coaches guide you through proper form and progressive training techniques.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=1", imageAlt: "strength training workout fitness athlete" },
+              title: "Strength & Conditioning",              subtitle: "Build muscle and power",              description: "Build muscle, increase power, and develop functional strength with scientifically-designed workout programs. Our coaches guide you through proper form and progressive training techniques.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=1", imageAlt: "strength training workout fitness athlete" },
               phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=2", imageAlt: "strength training workout fitness athlete" }
             },
             {
               id: 2,
-              title: "Cardio & Endurance",              description: "Improve your cardiovascular health and athletic stamina with customized cardio programs. From HIIT training to long-distance conditioning, we optimize your endurance performance.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=1", imageAlt: "cardio training running fitness health" },
+              title: "Cardio & Endurance",              subtitle: "Improve your cardiovascular health",              description: "Improve your cardiovascular health and athletic stamina with customized cardio programs. From HIIT training to long-distance conditioning, we optimize your endurance performance.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=1", imageAlt: "cardio training running fitness health" },
               phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=2", imageAlt: "cardio training running fitness health" }
             },
             {
               id: 3,
-              title: "Nutrition Coaching",              description: "Fuel your body right with personalized meal plans and nutrition guidance. Our coaches help you make sustainable dietary choices that support your training and goals.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=1", imageAlt: "nutrition meal plan healthy eating diet" },
+              title: "Nutrition Coaching",              subtitle: "Fuel your body right",              description: "Fuel your body right with personalized meal plans and nutrition guidance. Our coaches help you make sustainable dietary choices that support your training and goals.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=1", imageAlt: "nutrition meal plan healthy eating diet" },
               phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=2", imageAlt: "nutrition meal plan healthy eating diet" }
             }
           ]}
