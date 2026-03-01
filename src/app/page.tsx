@@ -10,8 +10,8 @@ import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
-import { Zap, Target, DollarSign, Users, Star, Mail } from 'lucide-react';
+import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
+import { Zap, Target, DollarSign, Users, Star, Mail, Zap as ZapIcon, TrendingUp, Award, Rocket } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -64,17 +64,29 @@ export default function LandingPage() {
       </div>
 
       <div id="wow" data-section="wow">
-        <SocialProofOne
+        <MetricCardSeven
           title="Experience the Transformation Magic"
-          description="Witness the incredible power of elite coaching as we transform bodies and minds. Our proven methods create stunning results that leave a lasting impression."
+          description="Witness the incredible power of elite coaching as we transform bodies and minds. Join thousands of satisfied clients who've achieved remarkable results."
           tag="WOW Factor"
-          names={[
-            "300% Faster Results",            "100% Guaranteed Success",            "∞ Unlimited Potential",            "Expert Coaching Methods"
+          tagIcon={TrendingUp}
+          tagAnimation="slide-up"
+          metrics={[
+            {
+              id: "1",              value: "300%",              title: "Faster Results",              items: ["Proven training methods", "Measurable progress", "Accelerated gains"]
+            },
+            {
+              id: "2",              value: "100%",              title: "Success Rate",              items: ["Personalized programs", "Expert guidance", "Results guaranteed"]
+            },
+            {
+              id: "3",              value: "∞",              title: "Unlimited Potential",              items: ["No limits to growth", "Continuous improvement", "Your best self"]
+            },
+            {
+              id: "4",              value: "15+",              title: "Years of Excellence",              items: ["Expert coaching methods", "Proven track record", "Industry leaders"]
+            }
           ]}
           textboxLayout="default"
           useInvertedBackground={false}
-          showCard={false}
-          speed={40}
+          animationType="slide-up"
         />
       </div>
 
