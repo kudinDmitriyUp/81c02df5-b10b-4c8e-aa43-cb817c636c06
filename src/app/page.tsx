@@ -10,8 +10,8 @@ import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import HeroBackgrounds from '@/components/background/HeroBackgrounds';
-import { Zap, Target, DollarSign, Users, Star, Mail, Sparkles } from 'lucide-react';
+import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
+import { Zap, Target, DollarSign, Users, Star, Mail } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -64,69 +64,18 @@ export default function LandingPage() {
       </div>
 
       <div id="wow" data-section="wow">
-        <div className="relative w-full py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500">
-          <div className="absolute inset-0 opacity-40">
-            <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-            <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000"></div>
-            <div className="absolute -bottom-8 left-1/2 w-96 h-96 bg-cyan-400 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000"></div>
-          </div>
-          
-          <div className="relative z-10 w-full px-6 lg:px-12">
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-              <div className="inline-flex items-center justify-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20">
-                <Sparkles className="w-5 h-5 text-white" />
-                <span className="text-white text-sm font-semibold">WOW Factor</span>
-              </div>
-              
-              <h2 className="text-4xl lg:text-6xl font-bold text-white leading-tight drop-shadow-lg">
-                Experience the
-                <span className="bg-gradient-to-r from-yellow-200 via-pink-200 to-cyan-200 bg-clip-text text-transparent block">Transformation Magic</span>
-              </h2>
-              
-              <p className="text-lg lg:text-xl text-white/90 max-w-2xl mx-auto drop-shadow-md">
-                Witness the incredible power of elite coaching as we transform bodies and minds. Our proprietary methods create stunning results that leave a lasting impression.
-              </p>
-              
-              <div className="grid grid-cols-3 gap-6 pt-8">
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
-                  <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text">300%</div>
-                  <p className="text-white/80 text-sm mt-2">Faster Results</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
-                  <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-pink-200 to-cyan-200 bg-clip-text">100%</div>
-                  <p className="text-white/80 text-sm mt-2">Guaranteed Success</p>
-                </div>
-                <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
-                  <div className="text-3xl font-bold text-transparent bg-gradient-to-r from-cyan-200 to-yellow-200 bg-clip-text">∞</div>
-                  <p className="text-white/80 text-sm mt-2">Unlimited Potential</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <style jsx>{`
-          @keyframes blob {
-            0%, 100% {
-              transform: translate(0, 0) scale(1);
-            }
-            33% {
-              transform: translate(30px, -50px) scale(1.1);
-            }
-            66% {
-              transform: translate(-20px, 20px) scale(0.9);
-            }
-          }
-          .animate-blob {
-            animation: blob 7s infinite;
-          }
-          .animation-delay-2000 {
-            animation-delay: 2s;
-          }
-          .animation-delay-4000 {
-            animation-delay: 4s;
-          }
-        `}</style>
+        <SocialProofOne
+          title="Experience the Transformation Magic"
+          description="Witness the incredible power of elite coaching as we transform bodies and minds. Our proven methods create stunning results that leave a lasting impression."
+          tag="WOW Factor"
+          names={[
+            "300% Faster Results",            "100% Guaranteed Success",            "∞ Unlimited Potential",            "Expert Coaching Methods"
+          ]}
+          textboxLayout="default"
+          useInvertedBackground={false}
+          showCard={false}
+          speed={40}
+        />
       </div>
 
       <div id="about" data-section="about">
