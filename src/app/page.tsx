@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from '@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay';
-import HeroBillboardDashboard from '@/components/sections/hero/HeroBillboardDashboard';
+import HeroOverlay from '@/components/sections/hero/HeroOverlay';
 import TextSplitAbout from '@/components/sections/about/TextSplitAbout';
 import FeatureCardNine from '@/components/sections/feature/FeatureCardNine';
 import PricingCardNine from '@/components/sections/pricing/PricingCardNine';
@@ -10,7 +10,7 @@ import TeamCardSix from '@/components/sections/team/TeamCardSix';
 import TestimonialCardSixteen from '@/components/sections/testimonial/TestimonialCardSixteen';
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
-import { Zap, Target, DollarSign, Users, Star, Mail, Hexagon, House, MessageSquareText, Settings, CircleDollarSign, ArrowLeftRight, Send } from 'lucide-react';
+import { Zap, Target, DollarSign, Users, Star, Mail } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -43,47 +43,22 @@ export default function LandingPage() {
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroBillboardDashboard
+        <HeroOverlay
           title="Transform Your Body, Elevate Your Life"
           description="Expert personal coaching designed to help you achieve your fitness goals. Whether you're starting your journey or reaching peak performance, our certified coaches are here to guide every step."
           tag="Professional Sports Coaching"
           tagIcon={Zap}
           tagAnimation="slide-up"
-          background={{ variant: "canvas-reveal" }}
+          imageSrc="http://img.b2bpic.net/free-photo/woman-gym-with-coach_1303-5545.jpg"
+          imageAlt="Elite coaching professional trainer helping client"
+          textPosition="bottom-left"
+          showBlur={true}
+          showDimOverlay={false}
           buttons={[
             { text: "Book Your First Session", href: "#contact" },
             { text: "View Services", href: "#services" }
           ]}
           buttonAnimation="slide-up"
-          dashboard={{
-            title: "Coaching Performance Hub",            logoIcon: Hexagon,
-            imageSrc: "http://img.b2bpic.net/free-photo/woman-gym-with-coach_1303-5545.jpg",            buttons: [
-              { text: "View Dashboard", href: "#" },
-              { text: "Export Progress", href: "#" }
-            ],
-            sidebarItems: [
-              { icon: House, active: true },
-              { icon: MessageSquareText },
-              { icon: Settings }
-            ],
-            stats: [
-              { title: "Clients Trained", values: [150, 280, 450], description: "Active coaching clients." },
-              { title: "Sessions Completed", values: [1240, 1850, 2340], description: "Total training sessions." },
-              { title: "Goals Achieved", values: [92, 145, 198], description: "Client success rate." }
-            ],
-            chartTitle: "Monthly Training Activity",            chartData: [
-              { value: 65 },
-              { value: 45 },
-              { value: 78 },
-              { value: 55 },
-              { value: 88 }
-            ],
-            listTitle: "Recent Client Achievements",            listItems: [
-              { icon: CircleDollarSign, title: "Weight Loss Goal Met", status: "Completed" },
-              { icon: ArrowLeftRight, title: "Strength Milestone", status: "In Progress" },
-              { icon: Send, title: "Endurance Record", status: "Completed" }
-            ]
-          }}
         />
       </div>
 
