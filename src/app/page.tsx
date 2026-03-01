@@ -112,17 +112,17 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Strength & Conditioning",              subtitle: "Build muscle and power",              description: "Build muscle, increase power, and develop functional strength with scientifically-designed workout programs. Our coaches guide you through proper form and progressive training techniques.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=1", imageAlt: "strength training workout fitness athlete" },
+              title: "Strength & Conditioning",              description: "Build muscle, increase power, and develop functional strength with scientifically-designed workout programs. Our coaches guide you through proper form and progressive training techniques.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=1", imageAlt: "strength training workout fitness athlete" },
               phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/crossfit-athlete-doing-exercise-with-barbell_58466-11089.jpg?_wi=2", imageAlt: "strength training workout fitness athlete" }
             },
             {
               id: 2,
-              title: "Cardio & Endurance",              subtitle: "Improve your cardiovascular health",              description: "Improve your cardiovascular health and athletic stamina with customized cardio programs. From HIIT training to long-distance conditioning, we optimize your endurance performance.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=1", imageAlt: "cardio training running fitness health" },
+              title: "Cardio & Endurance",              description: "Improve your cardiovascular health and athletic stamina with customized cardio programs. From HIIT training to long-distance conditioning, we optimize your endurance performance.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=1", imageAlt: "cardio training running fitness health" },
               phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/women-running-treadmill_1262-419.jpg?_wi=2", imageAlt: "cardio training running fitness health" }
             },
             {
               id: 3,
-              title: "Nutrition Coaching",              subtitle: "Fuel your body right",              description: "Fuel your body right with personalized meal plans and nutrition guidance. Our coaches help you make sustainable dietary choices that support your training and goals.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=1", imageAlt: "nutrition meal plan healthy eating diet" },
+              title: "Nutrition Coaching",              description: "Fuel your body right with personalized meal plans and nutrition guidance. Our coaches help you make sustainable dietary choices that support your training and goals.",              phoneOne: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=1", imageAlt: "nutrition meal plan healthy eating diet" },
               phoneTwo: { imageSrc: "http://img.b2bpic.net/free-photo/healthy-menu-recipe-food-diet_53876-122837.jpg?_wi=2", imageAlt: "nutrition meal plan healthy eating diet" }
             }
           ]}
