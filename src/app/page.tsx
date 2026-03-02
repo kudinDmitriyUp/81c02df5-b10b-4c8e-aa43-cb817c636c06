@@ -11,7 +11,8 @@ import TestimonialCardSixteen from '@/components/sections/testimonial/Testimonia
 import ContactCTA from '@/components/sections/contact/ContactCTA';
 import FooterLogoEmphasis from '@/components/sections/footer/FooterLogoEmphasis';
 import MetricCardSeven from '@/components/sections/metrics/MetricCardSeven';
-import { Zap, Target, DollarSign, Users, Star, Mail, Zap as ZapIcon, TrendingUp, Award, Rocket } from 'lucide-react';
+import SocialProofOne from '@/components/sections/socialProof/SocialProofOne';
+import { Zap, Target, DollarSign, Users, Star, Mail, TrendingUp } from 'lucide-react';
 
 export default function LandingPage() {
   return (
@@ -87,6 +88,21 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           animationType="slide-up"
+        />
+      </div>
+
+      <div id="logos" data-section="logos">
+        <SocialProofOne
+          title="Trusted by Industry Leaders"
+          description="Join thousands of people who've transformed with Elite Coaching"
+          tag="Our Clients"
+          textboxLayout="default"
+          useInvertedBackground={false}
+          names={[
+            "Fitness First",            "Gold's Gym",            "CrossFit Box",            "Wellness Hub",            "Athletic Club",            "Performance Center"
+          ]}
+          speed={40}
+          showCard={true}
         />
       </div>
 
